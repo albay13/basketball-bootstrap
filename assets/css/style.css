@@ -4,7 +4,159 @@
 }
 html,body{
 	height: 100%;
+  font-family: 'Abel', sans-serif;
+  background-color: 
 }
+.nav-link, .navbar-brand{
+  color: black;
+}
+.btn-outline-light:hover{
+  color: black !important;
+}
+#img-header{
+      background-image: url("../images/img12.jpg");
+      /* Set a specific height */
+      height: 200px; 
+
+      /* Create the parallax scrolling effect */
+
+      background-position: center;
+      background-repeat: no-repeat;
+}
+#header-services{
+    background-image: url(../images/img15.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white; 
+}
+.header-text{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);"
+}
+.header-paragraph{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);"
+}
+.parallax{
+      background-image: url("../images/img4.jpg");
+      /* Set a specific height */
+      height: 400px; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 30px;
+}
+@media screen and (max-width:640px) and (min-width: 320px){
+  .header-text{
+    font-size: 1rem;
+    top:30%;
+  }
+  .header-paragraph{
+    top:53%;
+  }
+}
+@media screen and (orientation:landscape) and (min-width: 1600px) {
+  .header-text{
+    font-size: 1.5rem;
+    top:35%;
+  }
+  .header-paragraph{
+    top:53%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .display-3 {
+    font-size: 3rem;
+  }
+}
+#img-5{
+  border-radius: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+/*Footer*/
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    color: white;
+    padding:50px 0;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+#footer ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.quick-links li a i{
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
 header {
   position: relative;
   background-color: black;
@@ -49,3 +201,4 @@ img{
     display: none;
   }
 }
+
