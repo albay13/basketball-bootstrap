@@ -7,6 +7,40 @@ html,body{
   font-family: 'Abel', sans-serif;
   background-color: 
 }
+/*Divider*/
+.divider-new {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.divider-new h3 {
+  margin-top: 5px;
+}
+
+.divider-new:before {
+  content: '';
+  height: 1.5px;
+  background: #c6c6c6;
+  flex: 1;
+  margin: 0 .45em 0 0;
+}
+
+.divider-new:after {
+  content: '';
+  height: 1.5px;
+  background: #c6c6c6;
+  flex: 1;
+  margin: 0 0 0 .45em;
+
+}
+
+.w-60{
+        width: 60%;
+}
 .nav-link, .navbar-brand{
   color: black;
 }
@@ -44,6 +78,24 @@ html,body{
   left: 50%;
   transform: translate(-50%, -50%);"
 }
+#line-parallax{
+      background-image: url("../images/line_bg.jpeg");
+      /* Set a specific height */
+      height: 189px; 
+      /* Create the parallax scrolling effect */
+      background-repeat: no-repeat;
+}
+#maps-parallax{
+      background-image: url("../images/maps.png");
+      /* Set a specific height */
+      height: 300px; 
+      opacity: 0.8;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 100px !important;
+      
+}
 .parallax{
       background-image: url("../images/img4.jpg");
       /* Set a specific height */
@@ -55,6 +107,12 @@ html,body{
       background-repeat: no-repeat;
       padding-top: 30px;
 }
+@media screen and (max-width: 1200px){
+  .w-60{
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width:640px) and (min-width: 320px){
   .header-text{
     font-size: 1rem;
